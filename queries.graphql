@@ -1,0 +1,29 @@
+# Query 1 - Customer Spending
+query GetCustomerSpending {
+  getCustomerSpending(customerId: "PASTE_CUSTOMER_ID_HERE") {
+    totalSpent
+    avgOrder
+    lastOrderDate
+  }
+}
+
+# Query 2 - Top Selling Products
+query GetTopSellingProducts {
+  getTopSellingProducts(limit: 5) {
+    name
+    quantitySold
+    price
+  }
+}
+
+# Query 3 - Sales Analytics
+query GetSalesAnalytics {
+  getSalesAnalytics(startDate: "2025-01-01", endDate: "2025-12-31") {
+    totalRevenue
+    completedOrders
+    revenuePerCategory {
+      category
+      revenue
+    }
+  }
+}
