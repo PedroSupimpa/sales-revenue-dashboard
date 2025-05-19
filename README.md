@@ -39,10 +39,10 @@ This will start:
 
 ### 3. Setup environment variables
 
-Copy the example file:
+Copy the .env.example file and create a new .env file inside the /backend directory:
 
 ```bash
-cp .env.example .env
+cp .env.example ./backend/.env
 ```
 
 ---
@@ -81,7 +81,7 @@ npm run dev
 In a new terminal:
 
 ```bash
-cd ../frontend
+cd frontend
 npm install
 npm run dev
 ```
